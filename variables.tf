@@ -33,17 +33,6 @@ variable "internet_query_enabled" {
   default     = null
 }
 
-variable "name" {
-  type        = string
-  description = "The name of a log analytics workspace"
-}
-
-variable "sku" {
-  type        = string
-  description = "The sku of the log analytics workspace"
-  default     = ""
-}
-
 variable "local_authentication_disabled" {
   type        = bool
   description = "Whether local authentication is enabled, defaults to false"
@@ -53,6 +42,11 @@ variable "local_authentication_disabled" {
 variable "location" {
   description = "The location for this resource to be put in"
   type        = string
+}
+
+variable "name" {
+  type        = string
+  description = "The name of a log analytics workspace"
 }
 
 variable "reservation_capacity_in_gb_per_day" {
@@ -70,6 +64,12 @@ variable "retention_in_days" {
 variable "rg_name" {
   description = "The name of the resource group, this module does not create a resource group, it is expecting the value of a resource group already exists"
   type        = string
+}
+
+variable "sku" {
+  type        = string
+  description = "The sku of the log analytics workspace"
+  default     = ""
 }
 
 variable "tags" {
