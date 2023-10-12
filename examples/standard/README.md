@@ -10,7 +10,7 @@ module "rg" {
 
 
 module "law" {
-  source = "../../"
+  source = "cyber-scot/log-analytics-workspace/azurerm"
 
   rg_name  = module.rg.rg_name
   location = module.rg.rg_location
@@ -41,7 +41,7 @@ No requirements.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_law"></a> [law](#module\_law) | ../../ | n/a |
+| <a name="module_law"></a> [law](#module\_law) | cyber-scot/log-analytics-workspace/azurerm | n/a |
 | <a name="module_rg"></a> [rg](#module\_rg) | cyber-scot/rg/azurerm | n/a |
 
 ## Resources

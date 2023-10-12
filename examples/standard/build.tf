@@ -8,7 +8,7 @@ module "rg" {
 
 
 module "law" {
-  source = "../../"
+  source = "cyber-scot/log-analytics-workspace/azurerm"
 
   rg_name  = module.rg.rg_name
   location = module.rg.rg_location
